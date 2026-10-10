@@ -1,19 +1,8 @@
-div{
-        
-}
-
-body{
-    
-}
-
 .cabeca{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: beige;
-}
-
-.cabeca > *{
-    flex: 1;
 }
 
 .logo{
@@ -23,6 +12,12 @@ body{
 .menu{
     display: flex;
     justify-content: flex-end;
-    gap: 0.5rem;
+    gap: 1.5rem;
     list-style: none;
+}
+
+.sobre{
+    display:grid;
+    grid-template-columns: 1fr, 2fr;
+    align-items: center;
 }
