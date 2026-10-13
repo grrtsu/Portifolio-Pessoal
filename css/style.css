@@ -1,20 +1,27 @@
-/* VARIAVEIS PRA FONTE */
+/* VARIAVEIS*/
+
 :root{
     --fonte-titulo: "Bricolage Grotesque", sans-serif;
     --fonte-texto: "IBM Plex Sans", sans-serif;
+
+    --cor-fundo: #0f1522;
+    --cor-texto: #9aa7bf;
+    --cor-titulos: #e8edf6;
 }
+
+/* VARIAVEIS*/
 
 /* FONTES E CORES */
 
 body{
     font-family: var(--fonte-texto);
-    background-color: #0f1522;
-    color: #9aa7bf;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
 }
 
 h1, h2, h3, .logo{
     font-family: var(--fonte-titulo);
-    color: #e8edf6;
+    color: var(--cor-titulos);
 }
 
 /* FONTES E CORES */
@@ -25,7 +32,7 @@ h1, h2, h3, .logo{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #d9dfe9;
+    border-bottom: 1px solid var(--cor-texto);
 }
 
 .menu{
@@ -63,7 +70,20 @@ h1, h2, h3, .logo{
     padding: 3rem 1.25rem;
 }
 
-.profile {
+h1{
+    font-size: 2.7rem;
+}
+
+.sobre p{
+    text-align: justify;
+    hyphens: auto;
+}
+
+.adjetivo{
+    font-size: 1.3rem;
+}
+
+.profile{
     object-fit: cover;
     border-radius: 10px;
     width: 20rem;
