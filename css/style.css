@@ -7,6 +7,9 @@
     --cor-fundo: #0f1522;
     --cor-texto: #9aa7bf;
     --cor-titulos: #e8edf6;
+    --cor-card: #172033;
+    --cor-tags: #1f2d48;
+    --cor-bordas: #2a3650;
 }
 
 /* VARIAVEIS*/
@@ -26,13 +29,21 @@ h1, h2, h3, .logo{
 
 /* FONTES E CORES */
 
+/* MUDANÇAS GERAIS */
+
+h2{
+    text-align: center;
+}
+
+/* MUDANÇAS GERAIS */
+
 /* CABEÇARIO DO SITE (Header das abas) */
 
 .cabeca{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--cor-texto);
+    border-bottom: 1px solid var(--cor-bordas);
 }
 
 .menu{
@@ -65,7 +76,7 @@ h1, h2, h3, .logo{
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 2rem;
-    max-width: 900px;
+    max-width: 56.25rem;
     margin: 0 auto;
     padding: 3rem 1.25rem;
 }
@@ -95,3 +106,35 @@ h1{
 }
 
 /* ABA SOBRE */
+
+/* ABA HABILIDADES */
+
+.card-hab {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100rem;
+    justify-self: center;
+    gap: 1rem;
+}
+
+.card-hab article{
+    border: 2px var(--cor-bordas) solid;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: var(--cor-card);
+}
+
+.card-hab ul{
+    justify-content: center;
+    gap: 0.7rem;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.card-hab li{
+    background-color: var(--cor-tags);
+    border-radius: 15%;
+    padding: 5px;
+}
