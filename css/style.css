@@ -112,9 +112,11 @@ h1{
 .card-hab {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 100rem;
-    justify-self: center;
+    max-width: 94rem;
     gap: 1rem;
+    margin: 0 auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 .card-hab article{
@@ -123,6 +125,9 @@ h1{
     padding-right: 15px;
     border-radius: 10px;
     background-color: var(--cor-card);
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .card-hab ul{
@@ -132,10 +137,15 @@ h1{
     list-style: none;
     padding: 0;
     flex-wrap: wrap;
+
 }
 
 .card-hab li{
     background-color: var(--cor-tags);
     border-radius: 4.5px;
     padding: 5px;
+}
+
+.card-hab p{
+    flex-grow: 1;
 }
