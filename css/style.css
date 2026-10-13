@@ -51,15 +51,23 @@ h1, h2, h3, .logo{
 
 .sobre{
     display:grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    gap: 10rem;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem;
 }
 
 .profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    align-items: right;
+    object-fit: cover;
+    border-radius: 10px;
+    width: 20rem;
+    height: 20rem;
+}
+
+.desc-self{
+    
 }
 
 /* ABA SOBRE */
