@@ -1,7 +1,10 @@
+/* VARIAVEIS PRA FONTE */
 :root{
     --fonte-titulo: "Bricolage Grotesque", sans-serif;
     --fonte-texto: "IBM Plex Sans", sans-serif;
 }
+
+/* FONTES UTILIZADAS */
 
 body{
     font-family: var(--fonte-texto);
@@ -11,15 +14,15 @@ h1, h2, h3, .logo{
     font-family: var(--fonte-titulo);
 }
 
+/* FONTES UTILIZADAS */
+
+/* CABEÇARIO DO SITE (Header das abas) */
+
 .cabeca{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: beige;
-}
-
-.logo{
-    text-align: center;
 }
 
 .menu{
@@ -29,22 +32,34 @@ h1, h2, h3, .logo{
     list-style: none;
 }
 
+.menu a:hover {
+    text-decoration:underline;
+}
+
+.logo{
+    text-align: center;
+}
+
 .logo, .menu a{
     text-decoration:none;
     color: inherit;
 }
 
-.menu a:hover {
-    text-decoration:underline;
-}
+/* CABEÇARIO DO SITE */
+
+/* ABA SOBRE (Nome, Foto, Descrição) */
 
 .sobre{
     display:grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
+    gap: 10rem;
 }
 
 .profile {
     max-width: 10rem;
     max-height: 10rem;
+    align-items: right;
 }
+
+/* ABA SOBRE */
