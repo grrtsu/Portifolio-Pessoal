@@ -112,7 +112,7 @@ h1{
 .card-hab {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 100rem;
+    max-width: 100rem;
     justify-self: center;
     gap: 1rem;
 }
@@ -129,12 +129,13 @@ h1{
     justify-content: center;
     gap: 0.7rem;
     display: flex;
-    text-decoration: none;
     list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
 .card-hab li{
     background-color: var(--cor-tags);
-    border-radius: 15%;
+    border-radius: 4.5px;
     padding: 5px;
 }
