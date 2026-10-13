@@ -4,17 +4,20 @@
     --fonte-texto: "IBM Plex Sans", sans-serif;
 }
 
-/* FONTES UTILIZADAS */
+/* FONTES E CORES */
 
 body{
     font-family: var(--fonte-texto);
+    background-color: #0f1522;
+    color: #9aa7bf;
 }
 
 h1, h2, h3, .logo{
     font-family: var(--fonte-titulo);
+    color: #e8edf6;
 }
 
-/* FONTES UTILIZADAS */
+/* FONTES E CORES */
 
 /* CABEÇARIO DO SITE (Header das abas) */
 
@@ -22,7 +25,7 @@ h1, h2, h3, .logo{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: beige;
+    border-bottom: 1px solid #d9dfe9;
 }
 
 .menu{
@@ -38,9 +41,10 @@ h1, h2, h3, .logo{
 
 .logo{
     text-align: center;
+    text-decoration: none;
 }
 
-.logo, .menu a{
+.menu a{
     text-decoration:none;
     color: inherit;
 }
@@ -67,7 +71,7 @@ h1, h2, h3, .logo{
 }
 
 .desc-self{
-    
+    align-self: start;
 }
 
 /* ABA SOBRE */
