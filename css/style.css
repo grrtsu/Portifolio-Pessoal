@@ -1,3 +1,16 @@
+:root{
+    --fonte-titulo: "Bricolage Grotesque", sans-serif;
+    --fonte-texto: "IBM Plex Sans", sans-serif;
+}
+
+body{
+    font-family: var(--fonte-texto);
+}
+
+h1, h2, h3, .logo{
+    font-family: var(--fonte-titulo);
+}
+
 .cabeca{
     display: flex;
     align-items: center;
@@ -16,8 +29,22 @@
     list-style: none;
 }
 
+.logo, .menu a{
+    text-decoration:none;
+    color: inherit;
+}
+
+.menu a:hover {
+    text-decoration:underline;
+}
+
 .sobre{
     display:grid;
-    grid-template-columns: 1fr, 2fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
+}
+
+.profile {
+    max-width: 10rem;
+    max-height: 10rem;
 }
