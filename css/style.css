@@ -401,3 +401,30 @@ h1{
 }
 
 /* ABA CONTATO */
+
+/* RODAPÉ */
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.direitos{
+    justify-self: center;
+}
+
+.acesso{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    list-style: none;
+
+}
+
+.acesso a{
+    text-decoration:none;
+    color: inherit;
+}
+
+/* RODAPÉ */
