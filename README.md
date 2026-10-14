@@ -11,7 +11,7 @@ Site de portfólio pessoal em página única (one page), feito com HTML e CSS pu
 
 ### Desktop
 
-![Versão desktop do portfólio](img/print-desktop.png)
+![Versão desktop do portfólio](img/print-pc.png)
 
 ### Mobile
 
