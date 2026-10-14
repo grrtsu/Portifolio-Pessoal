@@ -40,10 +40,16 @@ h2{
 /* CABEÇARIO DO SITE (Header das abas) */
 
 .cabeca{
+    height: 2.3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--cor-bordas);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #0f1522d9;
+    backdrop-filter: blur(3px);
 }
 
 .menu{
@@ -121,13 +127,12 @@ h1{
 
 .card-hab article{
     border: 2px var(--cor-bordas) solid;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 1rem;
     border-radius: 10px;
     background-color: var(--cor-card);
     display: flex;
     flex-direction: column;
-    
+    gap: 0.8rem;
 }
 
 .card-hab ul{
@@ -148,4 +153,34 @@ h1{
 
 .card-hab p{
     flex-grow: 1;
+}
+
+.card-hab h3, p, ul{
+    margin: 0;
+}
+
+/* ABA HABILIDADES */
+
+/* ABA PROJETOS */
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 94rem;
+    gap: 1rem;
+    margin: 0 auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.projetos-grid article{
+    border: 2px var(--cor-bordas) solid;
+    gap:1rem;
+    height: 1fr;
+    width: 1fr;
+    background-color: var(--cor-card);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
