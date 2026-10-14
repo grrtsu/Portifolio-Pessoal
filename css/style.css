@@ -1,6 +1,6 @@
 /* VARIAVEIS*/
 
-:root{
+:root {
     --fonte-titulo: "Bricolage Grotesque", sans-serif;
     --fonte-texto: "IBM Plex Sans", sans-serif;
 
@@ -17,13 +17,16 @@
 
 /* FONTES E CORES */
 
-body{
+body {
     font-family: var(--fonte-texto);
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
 }
 
-h1, h2, h3, .logo{
+h1,
+h2,
+h3,
+.logo {
     font-family: var(--fonte-titulo);
     color: var(--cor-titulos);
 }
@@ -32,13 +35,13 @@ h1, h2, h3, .logo{
 
 /* MUDANÇAS GERAIS */
 
-h2{
+h2 {
     text-align: center;
     font-size: 2rem;
     margin: 3rem;
 }
 
-main section + section{
+main section+section {
     border-top: 1px solid var(--cor-bordas);
     padding-top: 3rem;
     margin-top: 3rem;
@@ -48,7 +51,7 @@ main section + section{
 
 /* CABEÇARIO DO SITE (Header das abas) */
 
-.cabeca{
+.cabeca {
     height: 2.3rem;
     display: flex;
     align-items: center;
@@ -61,7 +64,7 @@ main section + section{
     backdrop-filter: blur(3px);
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: flex-end;
     gap: 1.5rem;
@@ -69,16 +72,16 @@ main section + section{
 }
 
 .menu a:hover {
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
-.logo{
+.logo {
     text-align: center;
     text-decoration: none;
 }
 
-.menu a{
-    text-decoration:none;
+.menu a {
+    text-decoration: none;
     color: inherit;
 }
 
@@ -86,8 +89,8 @@ main section + section{
 
 /* ABA SOBRE (Nome, Foto, Descrição) */
 
-.sobre{
-    display:grid;
+.sobre {
+    display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 2rem;
@@ -96,27 +99,27 @@ main section + section{
     padding: 3rem 1.25rem;
 }
 
-h1{
+h1 {
     font-size: 2.7rem;
 }
 
-.sobre p{
+.sobre p {
     text-align: justify;
     hyphens: auto;
 }
 
-.adjetivo{
+.adjetivo {
     font-size: 1.3rem;
 }
 
-.profile{
+.profile {
     object-fit: cover;
     border-radius: 10px;
     width: 20rem;
     height: 20rem;
 }
 
-.desc-self{
+.desc-self {
     align-self: start;
 }
 
@@ -134,7 +137,7 @@ h1{
     padding-left: 3rem;
 }
 
-.card-hab article{
+.card-hab article {
     border: 2px var(--cor-bordas) solid;
     padding: 1rem;
     border-radius: 10px;
@@ -144,7 +147,7 @@ h1{
     gap: 0.8rem;
 }
 
-.card-hab ul{
+.card-hab ul {
     justify-content: center;
     gap: 0.7rem;
     display: flex;
@@ -154,19 +157,19 @@ h1{
 
 }
 
-.card-hab li{
+.card-hab li {
     background-color: var(--cor-tags);
     border-radius: 4.5px;
     padding: 5px;
 }
 
-.card-hab p{
+.card-hab p {
     flex-grow: 1;
 }
 
 .card-hab h3,
 .card-hab p,
-.card-hab ul{
+.card-hab ul {
     margin: 0;
 }
 
@@ -184,9 +187,9 @@ h1{
     padding-left: 3rem;
 }
 
-.projetos-grid article{
+.projetos-grid article {
     border: 2px var(--cor-bordas) solid;
-    gap:1rem;
+    gap: 1rem;
     background-color: var(--cor-card);
     border-radius: 10px;
     display: flex;
@@ -196,30 +199,30 @@ h1{
     padding-bottom: 1rem;
 }
 
-.projetos-grid article img{
-    overflow:cover;
+.projetos-grid article img {
+    overflow: cover;
     width: 100%;
     height: 12rem;
 }
 
 .projetos-grid article h3,
-.projetos-grid article p{
+.projetos-grid article p {
     margin: 0;
     padding: 0 1rem;
 }
 
-.projetos-grid article p{
+.projetos-grid article p {
     flex-grow: 1;
     text-align: justify;
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
-.projetos-grid article:hover{
+.projetos-grid article:hover {
     transform: translateY(-4px);
     border-color: var(--cor-destaque);
 }
 
-.card-link{
+.card-link {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -228,13 +231,13 @@ h1{
     text-decoration: none;
 }
 
-.card-link h3{
+.card-link h3 {
     text-align: center;
 }
 
 /* ABA FORMAÇÃO */
 
-.card-form{
+.card-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 94rem;
@@ -244,34 +247,34 @@ h1{
     padding-left: 3rem;
 }
 
-.card-form article{
+.card-form article {
     border: 2px var(--cor-bordas) solid;
     padding: 1rem 1.5rem;
     border-radius: 10px;
     background-color: var(--cor-card);
 }
 
-.card-form h3{
+.card-form h3 {
     margin: 0 0 1.25rem;
 }
 
-.linha-tempo{
+.linha-tempo {
     list-style: none;
     margin: 0;
     padding: 0;
     border-left: 2px solid var(--cor-bordas);
 }
 
-.linha-tempo li{
+.linha-tempo li {
     position: relative;
     padding: 0 0 1.5rem 1.5rem;
 }
 
-.linha-tempo li:last-child{
+.linha-tempo li:last-child {
     padding-bottom: 0;
 }
 
-.linha-tempo li::before{
+.linha-tempo li::before {
     content: "";
     position: absolute;
     left: -9px;
@@ -283,23 +286,23 @@ h1{
     border: 2px solid var(--cor-destaque);
 }
 
-.linha-tempo .periodo{
+.linha-tempo .periodo {
     font-size: 0.85rem;
     color: var(--cor-destaque);
 }
 
-.linha-tempo h4{
+.linha-tempo h4 {
     margin: 0.2rem 0;
     font-family: var(--fonte-titulo);
     font-size: 1.05rem;
     color: var(--cor-titulos);
 }
 
-.linha-tempo .local{
+.linha-tempo .local {
     font-size: 0.9rem;
 }
 
-.linha-tempo p{
+.linha-tempo p {
     margin: 0.4rem 0 0;
 }
 
@@ -307,7 +310,7 @@ h1{
 
 /* ABA CONTATO */
 
-.contato{
+.contato {
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -317,15 +320,15 @@ h1{
 }
 
 .contato-info,
-.form-contato{
+.form-contato {
     flex: 1;
 }
 
-.contato-info p{
+.contato-info p {
     margin: 0 0 1.5rem;
 }
 
-.contato-links{
+.contato-links {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
@@ -334,7 +337,7 @@ h1{
     padding: 0;
 }
 
-.meio-contato{
+.meio-contato {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -348,17 +351,17 @@ h1{
     transition: border-color 0.2s ease;
 }
 
-.meio-contato:hover{
+.meio-contato:hover {
     border-color: var(--cor-destaque);
 }
 
-.meio-contato span:last-child{
+.meio-contato span:last-child {
     color: var(--cor-texto);
     font-size: 0.9rem;
     overflow-wrap: anywhere;
 }
 
-.form-contato{
+.form-contato {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -368,13 +371,13 @@ h1{
     background-color: var(--cor-card);
 }
 
-.form-contato label{
+.form-contato label {
     color: var(--cor-titulos);
     font-size: 0.9rem;
 }
 
 .form-contato input,
-.form-contato textarea{
+.form-contato textarea {
     font: inherit;
     padding: 0.6rem 0.75rem;
     margin-bottom: 0.5rem;
@@ -384,11 +387,11 @@ h1{
     color: var(--cor-titulos);
 }
 
-.form-contato textarea{
+.form-contato textarea {
     resize: vertical;
 }
 
-.form-contato button{
+.form-contato button {
     align-self: flex-start;
     font: inherit;
     font-weight: 600;
@@ -404,27 +407,37 @@ h1{
 
 /* RODAPÉ */
 
-.rodape{
+.rodape {
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem 3rem;
+    border-top: 1px solid var(--cor-bordas);
 }
 
-.direitos{
-    justify-self: center;
+.rodape div {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
-.acesso{
+.rodape ul {
     display: flex;
-    justify-content: flex-end;
     gap: 1.5rem;
     list-style: none;
-
+    margin: 0;
+    padding: 0;
 }
 
-.acesso a{
-    text-decoration:none;
+.rodape a {
     color: inherit;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.rodape a:hover {
+    color: var(--cor-destaque);
 }
 
 /* RODAPÉ */
