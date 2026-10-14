@@ -34,6 +34,14 @@ h1, h2, h3, .logo{
 
 h2{
     text-align: center;
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+main section + section{
+    border-top: 1px solid var(--cor-bordas);
+    padding-top: 3rem;
+    margin-top: 3rem;
 }
 
 /* MUDANÇAS GERAIS */
@@ -223,3 +231,76 @@ h1{
 .card-link h3{
     text-align: center;
 }
+
+/* ABA FORMAÇÃO */
+
+.card-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 94rem;
+    gap: 1rem;
+    margin: 0 auto;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.card-form article{
+    border: 2px var(--cor-bordas) solid;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    background-color: var(--cor-card);
+}
+
+.card-form h3{
+    margin: 0 0 1.25rem;
+}
+
+.linha-tempo{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid var(--cor-bordas);
+}
+
+.linha-tempo li{
+    position: relative;
+    padding: 0 0 1.5rem 1.5rem;
+}
+
+.linha-tempo li:last-child{
+    padding-bottom: 0;
+}
+
+.linha-tempo li::before{
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--cor-card);
+    border: 2px solid var(--cor-destaque);
+}
+
+.linha-tempo .periodo{
+    font-size: 0.85rem;
+    color: var(--cor-destaque);
+}
+
+.linha-tempo h4{
+    margin: 0.2rem 0;
+    font-family: var(--fonte-titulo);
+    font-size: 1.05rem;
+    color: var(--cor-titulos);
+}
+
+.linha-tempo .local{
+    font-size: 0.9rem;
+}
+
+.linha-tempo p{
+    margin: 0.4rem 0 0;
+}
+
+/* ABA FORMAÇÃO */
