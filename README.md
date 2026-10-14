@@ -4,8 +4,8 @@ Site de portfólio pessoal em página única (one page), feito com HTML e CSS pu
 
 - **Aluno:** Gabriel Ribeiro Rodrigues
 - **Curso:** Análise e Desenvolvimento de Sistemas, Senac-MG
-- **Site publicado:** [PREENCHER COM O LINK DO GITHUB PAGES]
-- **Repositório:** https://github.com/grrtsu/portfolio
+- **Site publicado:** https://grrtsu.github.io/Portifolio-Pessoal/
+- **Repositório:** https://github.com/grrtsu/Portifolio-Pessoal
 
 ## Prints
 
